@@ -1,0 +1,49 @@
+
+#wrap > section{
+    width: 100%;
+    height: 100vh;
+    position: relative; /* 세션 마다 위치 고정 */
+}
+/* section1 제목 */
+#wrap > section:nth-child(1){
+    background: url("https://cdn.pixabay.com/photo/2012/06/08/06/19/clouds-49520_960_720.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#wrap >section:nth-child(1) h3{
+    font-family: 'HSGyeoulNoonkott20';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#wrap >section:nth-child(1) p{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* section2 프로필*/
+#wrap > section:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+}
+#wrap .left{
+    width: 30%;
+    background: white;
+}
+.left img{width: 30%;}
+#wrap .right{
+    width: 70%;
+}
+
+#wrap > section:nth-child(2) .left{
+    width: calc(30% - 1px);
+    border: 1px solid black;
+}
+#wrap > section:nth-child(3){
+    display: flex;
+    justify-content: space-around;
+}
