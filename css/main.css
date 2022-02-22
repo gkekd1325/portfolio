@@ -34,16 +34,83 @@
     width: 30%;
     background: white;
 }
-.left img{width: 30%;}
+.left img{width: 380px; height: 200px;}
 #wrap .right{
     width: 70%;
 }
 
 #wrap > section:nth-child(2) .left{
     width: calc(30% - 1px);
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
-#wrap > section:nth-child(3){
+#wrap > section:nth-child(3){ /* 명함 */
     display: flex;
     justify-content: space-around;
+}
+#wrap > section:nth-child(3) .left{
+    width: calc(30% - 1px);
+    /* border: 1px #ccc solid; */
+}
+section{
+    outline: 1px solid black;
+}
+#wrap .card{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 70%;
+}
+#wrap .card h1{
+    font-size: 24pt;
+}
+#wrap .card h2{
+    font-size: 13pt;
+}
+#wrap .card h3{
+    font-size: 11pt;
+}
+#wrap .card p{
+    font-size: 10pt;
+}
+.bar{
+    width: 90%;
+    border-bottom:1px #333 solid ;
+    margin: 10px auto 5px auto;
+}
+.title{
+    width: 35%;
+    border-bottom:1px #333 solid ;
+    color: aquamarine;
+    position: relative;
+    top: 30px;
+    text-align: right;
+}
+.title strong{
+    color: #333;
+}
+.mokup{
+    width: 80%;
+    height: 70vh;
+    background: url("../img/Name.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin:15vh 5% 15vh 15%;
+
+}
+#wrap > section:nth-child(4){ /* 명함 */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+#wrap > section:nth-child(4) .left{
+    width: calc(30% - 1px);
+    /* border: 1px #ccc solid; */
+}
+#wrap > section:nth-child(4) .mokup{
+    width: 80%;
+    height: 70vh;
+    background: url("../img/Name.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin:15vh 15% 15vh 5%;
 }
