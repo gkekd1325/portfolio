@@ -32,7 +32,7 @@
 }
 #wrap .left{
     width: 30%;
-    background: white;
+    /* background: white; */
 }
 .left img{width: 380px; height: 200px;}
 #wrap .right{
@@ -113,4 +113,8 @@ section{
     background-size: cover;
     background-position: center center;
     margin:15vh 15% 15vh 5%;
+}
+#wrap > section:nth-child(5){ /* 명함 */
+    display: flex;    
+    justify-content: space-around;
 }
