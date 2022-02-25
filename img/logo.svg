@@ -4,7 +4,7 @@
 <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" width="600px" height="400px" viewBox="0 0 600 400" style="enable-background:new 0 0 600 400;" xml:space="preserve">
 	 <style>
-	 	.st0{animation:blink 9s infinite}
+	 	.st0{animation:blink 4s infinite}
         @keyframes blink{
 			0%{opacity:0;}
 			50%{opacity:1;}
