@@ -71,7 +71,7 @@ section:nth-child(2){
     display: flex;
     justify-content: space-around;
 }
-section:nth-child(2) span{
+span{
     text-align: center;
     font-size: 4rem;
 }
