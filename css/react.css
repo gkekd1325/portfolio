@@ -1,0 +1,16 @@
+@media all and (max-height: 800px) {
+    .profile img{width: 200px; height: 200px;}
+}
+@media(max-width:600px){
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+    }
+    span{width: 100%;}
+    .profile{width: 100%;}
+    .profile img{float: left;}
+    .text{width: 100%;}
+    .profile img{width: 150px; height: 150px;}
+}
