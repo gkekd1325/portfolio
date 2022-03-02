@@ -95,7 +95,7 @@ span{width: 100%;}
 progress{
     height: 30px;
     width: 50%;
-    float: left;
+    
 }
 section:nth-child(3){
     display: flex;
@@ -103,8 +103,9 @@ section:nth-child(3){
 }
 .bar{
     width: 50%;
+    
 }
-.bar img{width: 100px; height: 100px; float: left;}
+.bar img{width: 100px; height: 100px;}
 footer{
     background: black;
     color: white;
