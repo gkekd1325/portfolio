@@ -92,7 +92,19 @@ span{width: 100%;}
     width: calc(60% - 5%);
     padding-left: 5%;
 }
-
+progress{
+    height: 30px;
+    width: 50%;
+    float: left;
+}
+section:nth-child(3){
+    display: flex;
+    justify-content: space-around;
+}
+.bar{
+    width: 50%;
+}
+.bar img{width: 100px; height: 100px; float: left;}
 footer{
     background: black;
     color: white;
