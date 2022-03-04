@@ -94,8 +94,8 @@ span{width: 100%;}
 }
 progress{
     height: 30px;
-    width: 50%;
-    
+    width: 30%;
+    line-height: 50px;
 }
 section:nth-child(3){
     display: flex;
@@ -105,7 +105,12 @@ section:nth-child(3){
     width: 50%;
     
 }
-.bar img{width: 100px; height: 100px;}
+.per{
+    display: flex;
+    justify-content: flex-start;
+    line-height: 30px;
+}
+.bar img{width: 60px; height: 60px;}
 footer{
     background: black;
     color: white;
