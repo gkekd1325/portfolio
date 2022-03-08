@@ -59,6 +59,19 @@ section:nth-child(1){
     transform: translate(-50%, -50%);
     text-align: center;
 }
+.night img{
+    width: 150px; height: 150px;
+    animation: rotate 12s infinite;
+}
+@keyframes rotate {
+    100%{transform: rotate(360deg);}
+}
+.night{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-70%, -50%);
+}
 section:nth-child(1) p{
     transform: translate(0, 0px);
     font-size: 20px;
@@ -73,7 +86,7 @@ section:nth-child(2){
     display: flex;
     justify-content: space-around;
 }
-span{
+h1{
     text-align: center;
     font-size: 4rem;
 }
@@ -82,7 +95,7 @@ span{
     padding-left: 10%;
     
 }
-span{width: 100%;}
+h1{width: 100%;}
 .profile img{
     width: 300px;
     height: 300px;
@@ -94,23 +107,26 @@ span{width: 100%;}
 }
 progress{
     height: 30px;
-    width: 30%;
-    line-height: 50px;
+    width: 30%;    
 }
 section:nth-child(3){
     display: flex;
     justify-content: space-around;
 }
-.bar{
-    width: 50%;
-    
+.bar{ /* 수치문단 */
+    width: calc(50% - 10%);    
+    padding-left: 10%;
 }
-.per{
+.per{ /* 언어 별 수치 문단*/
     display: flex;
     justify-content: flex-start;
     line-height: 30px;
+    padding: 5px 0;
 }
-.bar img{width: 60px; height: 60px;}
+.bar img{width: 60px; height: 60px; padding-right: 10px;}
+.notice{
+    width: 50%;
+}
 footer{
     background: black;
     color: white;
