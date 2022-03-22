@@ -109,8 +109,8 @@ header{
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    padding-top: 20px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 #event img{width: 100%;}
 #event .left{
@@ -145,8 +145,9 @@ h1{font-family: 'SBAggroB';}
 
 .background{
     padding-top: 600px;
+    width: 100%;
     background: url("../img/hit_bg.jpg") no-repeat;
-    /* background-size: cover; */
+    background-size: cover;
     /* background-position: center center; */
     text-align: center;
     position: relative;
@@ -232,6 +233,7 @@ h1{font-family: 'SBAggroB';}
     margin: 0 auto;
     height: 430px;
     overflow: hidden;
+    padding-top: 50px;
 }
 #sns h1{text-align: center;}
 #sns p{

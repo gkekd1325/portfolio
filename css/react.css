@@ -6,11 +6,15 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        
     }
-    span{width: 100%;}
+    
+    h1{width: 100%;}
     .profile{width: 100%;}
     .profile img{float: left;}
     .text{width: 100%;}
     .profile img{width: 150px; height: 150px;}
+
+    .bar{width: 100%;}
+    .notice{width: 100%;}
+
 }
