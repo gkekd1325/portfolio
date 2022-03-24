@@ -1,6 +1,7 @@
 @media all and (max-height: 800px) {
     .profile img{width: 200px; height: 200px;}
 }
+
 @media(max-width:600px){
     section{
         display: flex;
@@ -17,4 +18,12 @@
     .bar{width: 100%;}
     .notice{width: 100%;}
 
+}
+@media(max-width:450px) {
+    nav{display: none;}
+    #nav{display: block;}
+    .box{
+        width: 400px;
+        font-size: 19px;
+    }
 }

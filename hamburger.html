@@ -5,37 +5,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="js/jquery-1.12.4.js"></script>
     <style>
+        *{margin: 0; padding: 0;}
         .box{
             width: 150px; height: 150px;
             background: turquoise;
-            margin: 0 auto;
-            
-            
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        .ham{
+            position: relative;
+            top: 50px;
+            left: 50px;
+            width: 50px;            
         }
         .line{
             width: 50px;
             height: 10px;
             border-radius: 10px;
-            padding: 20 0;
-            z-index: 1;
+            /* padding: 20 0; */
+            /* z-index: 1; */
             background: white;
-            margin-top: 10px;
             margin-bottom: 10px;
+        }
+        .close{
+            width: 50px;
             position: relative;
-            top: 50px;
+            top: 60px;
             left: 50px;
+            display: none;
+        }
+        .x{
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 50px;
+            height: 10px;
+            border-radius: 10px;
+            background: white;
+            
+        }
+        .x:nth-child(1){
+            transform: rotate(45deg);
+        }
+        .x:nth-child(2){
+            transform: rotate(-45deg);
+        }
+        li{list-style: none;}
+        a{
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .menu{
+            width: 150px;
+            /* margin: 0 auto; */
+            position: relative;
+            top: 150px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            display: none;
+        }
+        .menu li{
+            width: 150px;
+            background: turquoise;
+            text-align: center;
+        }
+        .menu a{            
+            line-height: 40px;
         }
     </style>
 </head>
 <body>
     <div class="box">
-        <a href="#none">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+        <a href="#none" class="ham">           
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>                       
         </a>
-        
+        <a href="#none" class="close">            
+                <div class="x"></div>                
+                <div class="x"></div>                    
+        </a>
     </div>
+    <ul class="menu">
+        <li><a href="#none">menu1</a></li>
+        <li><a href="#none">menu2</a></li>
+        <li><a href="#none">menu3</a></li>
+    </ul>
+    <script>
+        // var ham=document.querySelector(".ham");
+        // var menu=document.querySelector(".menu");
+        // var close=document.querySelector(".close");
+        // ham.addEventListener("click" , list);
+        // close.addEventListener("click" , none);
+        // function list(){
+        //     menu.style.display="block";
+        //     ham.style.display="none";
+        //     close.style.display="block";
+        // }
+        // function none(){
+        //     menu.style.display="none";
+        //     ham.style.display="block";
+        //     close.style.display="none";
+        // }
+        $(".ham").click(
+            function(){
+                $(".menu").stop().slideDown();
+                $(".ham").hide();
+                $(".close").show();
+            }
+        );
+        $(".close").click(
+            function(){
+                $(".menu").stop().slideUp();
+                $(".ham").show();
+                $(".close").hide();
+            }
+        );
+    </script>
 </body>
 </html>
