@@ -14,3 +14,8 @@
     .text{width: 100%;}
     .profile img{width: 150px; height: 150px;}
 }
+@media(max-width:450px){
+    .box{
+        width: 400px;
+    }
+}
