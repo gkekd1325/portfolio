@@ -1,21 +1,36 @@
 @media all and (max-height: 800px) {
     .profile img{width: 200px; height: 200px;}
 }
+
 @media(max-width:600px){
     section{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        
     }
-    span{width: 100%;}
+    
+    h1{width: 100%;}
     .profile{width: 100%;}
     .profile img{float: left;}
     .text{width: 100%;}
     .profile img{width: 150px; height: 150px;}
+<<<<<<< HEAD
 }
 @media(max-width:450px){
     .box{
         width: 400px;
+=======
+
+    .bar{width: 100%;}
+    .notice{width: 100%;}
+
+}
+@media(max-width:450px) {
+    nav{display: none;}
+    #nav{display: block;}
+    .box{
+        width: 400px;
+        font-size: 19px;
+>>>>>>> cb12c10471df2a9cc0ab6c872e76e2e17a149253
     }
 }
