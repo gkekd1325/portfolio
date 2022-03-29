@@ -2,11 +2,12 @@ nav{
     width: 100%;
     height: 50px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color:rgba(43, 155, 230, .6);
     z-index: 5;
+    position: fixed;
+    top: 0;
 }
-/* .menu li{list-style: none; width: calc(100% / 4);} */
 nav a{
     width: calc(100% / 4);
     text-align: center;
@@ -15,6 +16,31 @@ nav a{
     transition: 0.3s;
 }
 nav a:hover{color: yellow;}
+
+/* 모바일버전 nav */
+#nav{
+    width: 100%;
+    background-color:rgba(43, 155, 230, .6);
+    display: none;
+    /* height: 100px; */
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+#nav h2{padding: 20px;}
+.ham{
+    float: right;
+    transform: translateY(-50px);
+    margin-right: 5px;
+}
+.line{
+    width: 50px;
+    height: 10px;
+    background: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+/* section1 */
 section{
     width: 100%;
     height: 100vh;
@@ -23,10 +49,11 @@ section{
     display: flex;
     flex-wrap: wrap;
 }
-.Fixed {
+/* .Fixed {
     position: fixed;
     top: 0px;
-} /* 위치고정 클래스*/
+} 위치고정 클래스 */
+
 /* main page */
 section:nth-child(1) h1{
     font-family: 'HSGyeoulNoonkott20';
@@ -41,6 +68,7 @@ section:nth-child(1){
     background: url("https://cdn.pixabay.com/photo/2020/09/01/06/00/sky-5534319_960_720.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
+
     animation: fade 6s;
     color: white;
 }
@@ -58,6 +86,10 @@ section:nth-child(1){
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+@keyframes slide{
+    0%{transform: translate(0, 100px);}
+    50%{transform: translate(0, 0);}  /* 박스애니메이션 */
 }
 .night img{
     width: 150px; height: 150px;
@@ -77,10 +109,7 @@ section:nth-child(1) p{
     font-size: 20px;
     animation: slide 6s;
 }
-@keyframes slide{
-    0%{transform: translate(0, 100px);}
-    50%{transform: translate(0, 0);}  /* 박스애니메이션 */
-}
+
 /* who */
 section:nth-child(2){
     display: flex;
@@ -112,10 +141,13 @@ progress{
 section:nth-child(3){
     display: flex;
     justify-content: space-around;
+    overflow: hidden;
 }
 .bar{ /* 수치문단 */
     width: calc(50% - 10%);    
     padding-left: 10%;
+    transform: translateX(-50%);
+    transition: 0.6s;
 }
 .per{ /* 언어 별 수치 문단*/
     display: flex;
@@ -125,12 +157,25 @@ section:nth-child(3){
 }
 .bar img{width: 60px; height: 60px; padding-right: 10px;}
 .notice{
-    width: 50%;
+    width:50%;
+    line-height: 60px;
+    font-size: 20px;
+    transform: translateX(100%);
+    transition: 0.6s;
 }
 footer{
-    background: black;
+    background:midnightblue;
     color: white;
     text-align: center;
-    height: 100px;
+    padding-bottom: 20px;
 }
-/* .me{opacity: 0;} */
+footer h2{
+    font-size: 2rem; line-height: 40px;
+}
+footer p{line-height: 30px; font-size: 20px;}
+footer p:nth-child(2){
+    padding-bottom: 30px;
+}
+footer span{color: lime;}
+footer img{width: 50px; margin: 0 auto;}
+
