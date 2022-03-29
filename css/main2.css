@@ -53,6 +53,7 @@ section{
     position: fixed;
     top: 0px;
 } 위치고정 클래스 */
+
 /* main page */
 section:nth-child(1) h1{
     font-family: 'HSGyeoulNoonkott20';
