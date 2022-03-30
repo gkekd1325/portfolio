@@ -118,6 +118,21 @@ section{
     display: flex;    
     justify-content: space-around;
 }
+
+.menu{
+    position: fixed;
+    width: 200px;
+    top: 50px;
+    left: 50px;
+    z-index: 4;
+}
+.menu a{
+    background: lightblue;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+}
+
 @media screen and (max-width: 600px){
     .left{
         width: 100%;
