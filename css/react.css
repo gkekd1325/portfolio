@@ -15,10 +15,13 @@
     .text{width: 100%;}
     .profile img{width: 150px; height: 150px;}
 
+<<<<<<< HEAD
 }
 @media(max-width:450px){
     .box{
         width: 400px;}
+=======
+>>>>>>> 3bcf75ce4fa25a317e73ddebd3917153ef3dd1c6
     .bar{width: 100%;}
     .notice{width: 100%;}
 
@@ -29,6 +32,9 @@
     .box{
         width: 400px;
         font-size: 19px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3bcf75ce4fa25a317e73ddebd3917153ef3dd1c6
     }
 }

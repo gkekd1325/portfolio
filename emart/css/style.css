@@ -123,6 +123,7 @@ nav{
     width: 800px;
     margin: 0 auto;
     padding-bottom: 10%;
+    background: gainsboro;
 }
 .tap{
     display: flex;
@@ -132,9 +133,16 @@ nav{
     width: calc(100% / 4);
     text-align: center;
     border-right: 2px solid gold;
+    background: gray;
 }
 .tap li:nth-last-child(1){border: 0;}
-.tap a{line-height: 40px; }
+.tap a{line-height: 40px; display: block;}
+.list{
+    display: flex;
+    justify-content: space-around;
+}
+.list li{padding: 10px; width: 100%;}
+.list img{width: 100%; height: 100px;}
 
 #under_bar{
     width: 1200px;
