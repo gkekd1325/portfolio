@@ -124,6 +124,11 @@ nav{
     margin: 0 auto;
     padding-bottom: 10%;
 }
+#notice h3{
+    text-align: center;
+    line-height: 60px;
+    font-size: 25px;
+}
 .tap{
     display: flex;
     border-bottom:solid 2px gold;
@@ -174,4 +179,27 @@ nav{
 .under li:hover a{
     color: rgb(85, 76, 76);
     font-weight: bold;
+}
+footer{
+    width: 100%;
+    background:dimgray;
+    color: white;
+    padding-top: 3%;
+}
+#footer{
+    width: 1000px;
+    margin:  0 auto;
+    display: flex;
+}
+.left{
+    width: 70%;
+    display: flex;
+}
+.detail ul{
+    display: flex;
+    justify-content: space-between;
+}
+.detail li{padding-left: 20px;}
+.right{
+    width: 30%;
 }

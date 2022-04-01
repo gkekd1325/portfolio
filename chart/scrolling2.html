@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scrolling event</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+        *{margin: 0; padding: 0;}
+        section{width: 100%; height: 100vh;}
+        section:nth-child(odd){  /* odd는 홀수 */
+            background: #ccc;
+        }
+        #wrap{
+            width: 600%;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <section>1
+            <button>gogo</button>
+        </section>
+        <section>2</section>
+        <section>3</section>
+        <section>4</section>
+        <section>5</section>
+        <section>6</section>
+    </div>
+    <script>
+        
+        window.addEventListener('wheel' ,go);
+        var i=0;
+        var count =0;
+            function go(e){
+                count++;
+                var on =count%5;
+                console.log(e.wheelDelta); /* wheeldelta는 위 인지 아래인지 구분 */
+                if(e.wheelDelta>0){                    
+                    if(i>0 && on==0){
+                        i--;
+                        console.log("위로~~~");
+                    }
+                }
+                else{                    
+                    if(i<5 && on ==0){                        
+                        i++;
+                        console.log("아래로");
+                    }
+                    
+                }
+                $("html, body").stop().animate({scrollLeft:innerWidth*i},600,"easeInOutExpo");
+                // $("html, body").stop().animate({scrollTop:1000},600,"easeInOutExpo");
+            }
+            // 스크롤 막기 시작
+        $('html, body').css({'overflow': 'hidden', 'height': '100%'});
+        $('#element').on('scroll touchmove mousewheel', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+        });
+        //스크롤 막기 끝
+        
+    </script>
+</body>
+</html>
