@@ -6,7 +6,7 @@ header{
     top: 0;
     z-index: 3;
 }
-body{padding-top: 5%;}
+body{padding-top: 5%; padding-bottom: 5%;}
 .menu{
     display: flex;
     justify-content: space-between;
@@ -184,7 +184,10 @@ footer{
     width: 100%;
     background:dimgray;
     color: white;
-    padding-top: 3%;
+    padding-top: 2%;
+    position: fixed;
+    bottom: 0;
+    font-size: 13px;
 }
 #footer{
     width: 1000px;
@@ -193,13 +196,22 @@ footer{
 }
 .left{
     width: 70%;
-    display: flex;
+    /* display: flex; */
 }
-.detail ul{
+footer ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-.detail li{padding-left: 20px;}
+.footer_logo{display: flex; padding-right: 20px;}
+.detail{display: flex;}
+.detail li{padding-right: 20px; line-height: 40px;}
+.detail span{font-weight: bold; padding-left: 20px;}
+
+.detail2{display: flex;}
+.detail2 li{padding-right: 20px;}
+.detail2 a:hover{text-decoration: underline;}
+.detail2 span{color:darkblue; font-size: 15px ;}
 .right{
     width: 30%;
 }
+.f_sub a{font-weight: bold;}
