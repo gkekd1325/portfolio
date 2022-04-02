@@ -1,0 +1,7 @@
+@media(max-height: 700px) {
+    footer{
+        position: relative;
+        bottom: 0;
+    }
+    body{padding-bottom: 0;}
+}
