@@ -3,7 +3,7 @@ nav{
     height: 50px;
     display: flex;
     justify-content: space-around;
-    background-color:rgba(43, 155, 230, .6);
+    background: rgb(43, 155, 230);
     z-index: 5;
     position: fixed;
     top: 0;
@@ -22,16 +22,25 @@ nav a:hover{color: yellow;}
     width: 100%;
     background-color:rgba(43, 155, 230, .6);
     display: none;
-    /* height: 100px; */
     position: fixed;
     top: 0;
     z-index: 3;
+    
 }
 #nav h2{padding: 20px;}
 .ham{
     float: right;
     transform: translateY(-50px);
     margin-right: 5px;
+}
+.close{
+    float: right;
+    transform: translateY(-50px);
+    margin-right: 5px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: relative;
 }
 .line{
     width: 50px;
@@ -40,6 +49,43 @@ nav a:hover{color: yellow;}
     margin-bottom: 10px;
     border-radius: 5px;
 }
+.x{
+    width: 50px;
+    height: 10px;
+    background: white;
+    position: absolute;
+    top: 0;
+    
+    border-radius: 5px;
+}
+.x:nth-child(1){
+    transform: rotate(45deg);
+}
+.x:nth-child(2){
+    transform: rotate(-45deg);
+    
+}
+.m_menu{margin-top: 60px; display: none;}
+.m_menu li{
+    /* width: 100%; */
+    list-style: none;
+    text-align: center;
+    border-bottom: 1px solid white;
+    margin: 0 auto;
+}
+.m_menu li:nth-child(1){
+    border-top: 1px solid white;
+}
+.m_menu a{
+    
+    
+    color: white;
+    line-height: 50px;
+    transition: 0.3s;
+    font-size: 30px;
+    width: 100%;
+}
+.m_menu a:hover{color: yellow;}
 /* section1 */
 section{
     width: 100%;
@@ -169,6 +215,7 @@ footer{
     text-align: center;
     padding-bottom: 20px;
 }
+
 footer h2{
     font-size: 2rem; line-height: 40px;
 }

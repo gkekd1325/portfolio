@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/main2.css">
     <link rel="stylesheet" href="css/react.css">
     <script src="js/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -21,10 +22,10 @@
             <h1 id="Home">Beginner's <br> PortFolio</h1>
             <nav>
                 <!-- <ul class="menu"> -->
-                    <a href="#Home">Home</a>
-                    <a href="#who">Who</a>
-                    <a href="#Language">Language</a>
-                    <a href="#Works">Works</a>
+                    <a href="#Home" dataNum='0'>Home</a>
+                    <a href="#who" dataNum='1'>Who</a>
+                    <a href="#Language" dataNum='2'>Language</a>
+                    <a href="#Works" dataNum='3'>Works</a>
                 <!-- </ul> -->
             </nav>
             <div id="nav">
@@ -34,8 +35,20 @@
                     <div class="line"></div>
                     <div class="line"></div>
                 </a>
-                
+                <a href="#none" class="close">            
+                    <div class="x"></div>                
+                    <div class="x"></div>                    
+                </a>
+                <ul class="m_menu">
+                    <li><a href="#Home" dataNum="0">Home</a></li>
+                    <li><a href="#who" dataNum="1">Who</a></li>
+                    <li><a href="#Language" dataNum="2">Language</a></li>
+                    <li><a href="#Works" dataNum="3">Works</a></li>
+                </ul>
             </div>
+            
+                
+            
 
             <div class="background"></div>
             <div class="box">
@@ -122,5 +135,6 @@
     </div>
     <script src="js/script.js"></script>
     <script src="js/night.js"></script>
+    <script src="js/mobile.js"></script>
 </body>
 </html>

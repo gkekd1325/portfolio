@@ -37,7 +37,7 @@ function ent(){
         d.style.transition = ".6s";
         d.style.opacity="0";
     }
-    if(scrollY>=1500){
+    if(scrollY>=1200){
         bar.style.transform="translateX(10%)";
         notice.style.transform="translateX(10%)";
     }
@@ -47,3 +47,17 @@ function ent(){
     }
 }
 /* 스크립트에 클래스를 추가(on이라는 클래스가 추가되었을떄 실행) 하고 스타일시트로 실행 어떻?*/
+
+
+var offset;
+var sectionCounter=0;
+var $menu =$("nav a");
+$menu.click(
+    function(){
+        console.log(111);
+        sectionCounter = $(this).attr('dataNum'); 
+        offset =innerHeight*sectionCounter;
+        $("html, body").stop().animate({scrollTop:offset},600,"easeInOutExpo");
+    }
+)
+
