@@ -26,6 +26,13 @@
         width: 400px;
         font-size: 19px;
     }
+    .works{
+        width: 400px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .works img{width: 80px;}
     /* body{
         padding-bottom: 20px;
     } */
