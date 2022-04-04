@@ -14,6 +14,7 @@ nav a{
     font-size: 30px;
     line-height: 50px;
     transition: 0.3s;
+    color: white;
 }
 nav a:hover{color: yellow;}
 
@@ -25,17 +26,23 @@ nav a:hover{color: yellow;}
     position: fixed;
     top: 0;
     z-index: 3;
-    
+    color: white;
 }
 #nav h2{padding: 20px;}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
 .ham{
-    float: right;
-    transform: translateY(-50px);
+    /* float: right;
+    transform: translateY(-50px); */
     margin-right: 5px;
+    padding-top: 10px;
 }
 .close{
-    float: right;
-    transform: translateY(-50px);
+    /* float: right;
+    transform: translateY(-50px); */
+    margin-top: 50px;
     margin-right: 5px;
     display: none;
     width: 50px;
@@ -65,7 +72,7 @@ nav a:hover{color: yellow;}
     transform: rotate(-45deg);
     
 }
-.m_menu{margin-top: 60px; display: none;}
+.m_menu{display: none;}
 .m_menu li{
     /* width: 100%; */
     list-style: none;
@@ -179,6 +186,9 @@ h1{width: 100%;}
 .text{
     width: calc(60% - 5%);
     padding-left: 5%;
+    font-size: 20px;
+    line-height: 40px;
+    /* font-weight: bold; */
 }
 progress{
     height: 30px;
@@ -203,12 +213,36 @@ section:nth-child(3){
 }
 .bar img{width: 60px; height: 60px; padding-right: 10px;}
 .notice{
-    width:50%;
+    width: calc(50% - 40px);
     line-height: 60px;
     font-size: 20px;
     transform: translateX(100%);
     transition: 0.6s;
+    padding-right: 40px;
 }
+
+.works{
+    flex-wrap: wrap;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.works li{
+    width: 200px;
+    height: 400px;
+    overflow: hidden;
+    padding: 0 20px 10 20px;
+    display: inline-block;
+}
+.works a{
+    overflow: hidden;
+    
+}
+.works img{
+    width: 100%; 
+    
+}
+
 footer{
     background:midnightblue;
     color: white;

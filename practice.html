@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/reset2.css">
     <link rel="stylesheet" href="css/font2.css">
     <link rel="stylesheet" href="css/main2.css">
@@ -16,45 +18,42 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
+    <nav>
+        <!-- <ul class="menu"> -->
+            <a href="#Home" dataNum='0'>Home</a>
+            <a href="#who" dataNum='1'>Who</a>
+            <a href="#Language" dataNum='2'>Language</a>
+            <a href="#Works" dataNum='3'>Works</a>
+        <!-- </ul> -->
+    </nav>
+    <div id="nav">
+        <div class="nav">
+            <h2>Beginner's PortFolio</h2>
+            <a href="#none" class="ham">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </a>
+            <a href="#none" class="close">            
+                <div class="x"></div>                
+                <div class="x"></div>                    
+            </a>
+        </div>    
+        <ul class="m_menu">
+            <li><a href="#Home" dataNum="0">Home</a></li>
+            <li><a href="#who" dataNum="1">Who</a></li>
+            <li><a href="#Language" dataNum="2">Language</a></li>
+            <li><a href="#Works" dataNum="3">Works</a></li>
+        </ul>                                
+    </div>
     <div id="wrap">
         
         <section>
-            <h1 id="Home">Beginner's <br> PortFolio</h1>
-            <nav>
-                <!-- <ul class="menu"> -->
-                    <a href="#Home" dataNum='0'>Home</a>
-                    <a href="#who" dataNum='1'>Who</a>
-                    <a href="#Language" dataNum='2'>Language</a>
-                    <a href="#Works" dataNum='3'>Works</a>
-                <!-- </ul> -->
-            </nav>
-            <div id="nav">
-                <h2>Beginner's PortFolio</h2>
-                <a href="#none" class="ham">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </a>
-                <a href="#none" class="close">            
-                    <div class="x"></div>                
-                    <div class="x"></div>                    
-                </a>
-                <ul class="m_menu">
-                    <li><a href="#Home" dataNum="0">Home</a></li>
-                    <li><a href="#who" dataNum="1">Who</a></li>
-                    <li><a href="#Language" dataNum="2">Language</a></li>
-                    <li><a href="#Works" dataNum="3">Works</a></li>
-                </ul>
-            </div>
-            
-                
-            
-
+            <h1 id="Home">Beginner's <br> PortFolio</h1>                                                               
             <div class="background"></div>
             <div class="box">
                 <p>오류 발생 시 해결하기 위해 노력 하는 웹 퍼블리셔 입니다. 
-                    Lorem ipsum dolor sit, amet consectetur 
-                    adipisicing elit. Mollitia magnam ut quam  
+                     
                 </p>
             </div>
             <div class="night">
@@ -66,8 +65,8 @@
             <!-- <div class="who"> -->
                 <div class="profile">
                     <ul>
-                        <li><img src="img/logo.svg" alt="" class="me"></li>
-                        <li><img src="img/Name.jpg" alt=""></li>
+                        <li><img src="img/logo.svg" alt="사진" class="me"></li>
+                        <li><img src="img/Name.jpg" alt="사진"></li>
                     </ul>
                     캐리커쳐, 사진
                 </div>                                
@@ -75,8 +74,8 @@
                 <h3>스펙소개</h3>
                 
                     <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium maxime error ducimus labore eveniet quas alias corporis nihil tempore quasi laborum natus dolores provident quisquam delectus, dolor, ex ipsam quam.</li>
-                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab vel quibusdam excepturi hic fuga inventore nobis explicabo. Explicabo ipsa, reprehenderit sequi ipsam debitis reiciendis similique odit ullam harum et facere.</li>
+                        <li>Certificate : 정보처리기사, 컴퓨터활용능력2급</li>
+                        <li>2022.02.21 <br> 동신대학교 졸업</li>
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure animi possimus adipisci repudiandae excepturi ducimus eos aliquid nulla minus laudantium eveniet consequatur, quo cum? Porro deleniti accusantium nostrum deserunt aperiam!</li>
                     </ul>                 
                 
@@ -109,7 +108,7 @@
             </div>
             <div class="notice">
                 <ul>
-                    <li>HTML - 웹 표준 준수, UI/웹 페이지 구상</li>
+                    <li>HTML - 웹 표준 준수, UI/웹 페이지 구상 , 메인페이지 모바일작성(개발자모드)</li>
                     <li>CSS - 애니메이션, 채색작업, 일부 반응형, 배치작업</li>
                     <li>JQuery - 클릭 탭 표시, 메뉴 스크롤 고정</li>
                     <li>AI - 태양/달 그림, 캐리커쳐</li>
@@ -119,6 +118,14 @@
         </section>
         <section>
             <h1 id="Works">Works</h1>
+            <div class="works">
+                <ul>
+                    <li><a href="#none" target="#"><img src="img/project01.png" alt="오뚜기"></a></li>
+                    <li><a href="#none"><img src="img/emart.png" alt="이마트"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
         </section>
         <footer>
             <h2>contact me</h2>

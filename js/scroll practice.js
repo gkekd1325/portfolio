@@ -37,15 +37,22 @@ function scrollAni(e){
     });
     //스크롤 막기 끝
 }
-
+/* section 이동메뉴 */
 /* jquery */
 
 var $menu =$(".menu a");
 $menu.click(
     function(){
         console.log(111);
-        sectionCounter = $(this).attr('dataNum'); 
+        sectionCounter = $(this).attr('dataNum'); /* 현재 선택한 것의 dataNum이라는 속성을 가져온다 */
         offset =innerHeight*sectionCounter;
         $("html, body").stop().animate({scrollTop:offset},600,"easeInOutExpo");
+    }
+)
+
+$(".burger").click(
+    function(){
+        $(this).toggleClass("on");
+        $("#popupNav").toggleClass("on");
     }
 )
