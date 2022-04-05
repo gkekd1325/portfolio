@@ -68,7 +68,19 @@ nav{
     80%{margin-left: -400%;}
     100%{margin-left: -500%;}
 }
+.left_button{
+    position: absolute;
+    top: 400px;
+    left: 20px;
+}
+.right_button{
+    position: absolute;
+    top: 400px;
+    right: 20px;
+}
+.button img{width: 100px;}
 
+/* weeks */
 #weeks{
     width: 1200px;
     margin: 0 auto;

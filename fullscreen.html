@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+    <style>
+        *{margin:0; padding:0;}
+        #bgvideo{
+            min-width:100%; 
+            min-height:100vh;
+            position: fixed;
+            width:auto;
+            height:auto; /* auto로 하면 창 크기에 맞춤 */
+            z-index: -999;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted poster="" id="bgvideo">
+        <source src="park.mp4" type="video/mp4">
+    </video>
+
+    <div class="title">박효신.짱</div>
+</body>
+</html>
+​

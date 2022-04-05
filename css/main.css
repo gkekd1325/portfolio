@@ -201,6 +201,14 @@ section{
     line-height: 40px;
     display: block;
 } */
+#bgvideo{
+    min-width:100%; 
+    min-height:100vh;
+    position: fixed;
+    width:auto;
+    height:auto; /* auto로 하면 창 크기에 맞춤 */
+    z-index: -999;
+}
 
 @media screen and (max-width: 600px){
     .left{
