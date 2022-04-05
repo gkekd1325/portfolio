@@ -201,6 +201,8 @@ section{
     line-height: 40px;
     display: block;
 } */
+
+/* 비디오 */
 #bgvideo{
     min-width:100%; 
     min-height:100vh;
