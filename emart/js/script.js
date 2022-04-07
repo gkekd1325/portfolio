@@ -26,7 +26,7 @@ var start;
 
 window.addEventListener('load',interVal); /* 문서 실행 시 interval 함수를 실행 */
 function interVal(){
-    start = setInterval(move, 2000); /* 2초마다 move함수 실행 */
+    start = setInterval(move, 6000); /* 6초마다 move함수 실행 */
 }
 
 left.addEventListener("click", reverse);
