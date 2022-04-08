@@ -266,5 +266,6 @@ footer p:nth-child(2){
     padding-bottom: 30px;
 }
 footer span{color: lime;}
-footer img{width: 50px; margin: 0 auto;}
+.git{display: flex; justify-content: center;}
+footer img{width: 50px;}
 
