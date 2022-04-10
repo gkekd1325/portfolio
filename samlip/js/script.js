@@ -43,3 +43,11 @@ function interVal(){
     setInterval(move, 6000); /* 6초마다 move함수 실행 */
 }
 
+$(".menu li").hover(
+    function(){
+        $(this).children(".s_menu").stop().fadeIn().css("display","flex");
+    },
+    function(){
+        $(this).children(".s_menu").stop().fadeOut().css("display","flex");
+    }
+);
