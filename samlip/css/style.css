@@ -95,7 +95,19 @@ section:nth-child(even){
 .arrow img{width: 50px;}
 h1{
     line-height: 50px; 
-    text-align: center; padding-top: 8%;
+    text-align: center; padding-top: 5%;
     font-size: 2rem;
 }
-p{text-align: center; font-size: 20px;}
+p{text-align: center; font-size: 15px;}
+#iframe{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+#iframe h3{font-size: 20px;}
+.i_left{
+    width: 40%;
+}
+.i_right{
+    width: 60%;
+}
