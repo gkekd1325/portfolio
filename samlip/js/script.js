@@ -45,9 +45,22 @@ function interVal(){
 
 $(".menu li").hover(
     function(){
-        $(this).children(".s_menu").stop().fadeIn().css("display","flex");
+        $(this).children(".s_menu").stop().fadeIn().css("display","flex","space-around");
+        
     },
     function(){
         $(this).children(".s_menu").stop().fadeOut().css("display","flex");
     }
 );
+$(".sns ul").hover(
+    function(){
+        $(this).children(".bw").hide();
+        $(this).children(".color").show();
+    },
+    function(){
+        $(this).children(".bw").show();
+        $(this).children(".color").hide();
+        
+    }
+);
+
