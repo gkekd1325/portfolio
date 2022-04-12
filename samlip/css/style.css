@@ -99,6 +99,7 @@ h1{
     font-size: 2rem;
 }
 p{text-align: center; font-size: 15px;}
+.sub_title{line-height: 40px; text-align: center;}
 #iframe{
     width: 1000px;
     margin: 0 auto;
@@ -111,3 +112,4 @@ p{text-align: center; font-size: 15px;}
 .i_right{
     width: 60%;
 }
+.list{display: flex; }
