@@ -126,6 +126,7 @@ p{ font-size: 15px;}
 .tap_menu{
     display: flex;
     justify-content: space-between;
+    width: 100%;
     /* align-items: center; */
 }
 table{
@@ -133,7 +134,7 @@ table{
     margin-top: 150px; */
     line-height: 50px;
     text-align: center;
-
+    /* width: 100%; */
 }
 td{padding:0 10px;}
 .address{width: 500px;}
