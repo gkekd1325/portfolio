@@ -97,13 +97,17 @@ h1{
     line-height: 50px; 
     text-align: center; padding-top: 5%;
     font-size: 2rem;
+    border-bottom: 5px solid deepskyblue;
+    width: 100%;
+    border-radius:5px;
 }
 p{ font-size: 15px;}
-.sub_title{line-height: 40px; text-align: center;}
+.sub_title{line-height: 40px; text-align: center; width: 100%;}
 #iframe{
     width: 1000px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
 }
 #iframe h3{font-size: 20px; line-height: 50px;}
 .i_left{
@@ -122,11 +126,20 @@ p{ font-size: 15px;}
 .tap_menu{
     display: flex;
     justify-content: space-between;
+    /* align-items: center; */
 }
+table{
+    /* margin-right: 50px;
+    margin-top: 150px; */
+    line-height: 50px;
+    text-align: center;
+
+}
+td{padding:0 10px;}
+.address{width: 500px;}
 .tap{
-    position: relative;
-    top: 10px;
-    right: 50px;
+    margin-top: 150px;
+    margin-right: 50px;
 }
 .tap li{
     width: 100px;
@@ -137,6 +150,7 @@ p{ font-size: 15px;}
     text-align: center;
     display: block;
 }
+section:nth-child(3) h1{width: 1000px; margin: 0 auto;}
 @media(max-height:800px) {
     #map{
         width: 100%;

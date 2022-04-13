@@ -117,81 +117,62 @@
             </div>            
         </section>
         <section>
-            <h1>오시는 길</h1>
-            <div class="sub_title">고객과 함께하는 SPC삼립의 오시는 길을 환영합니다</div>
+            
             <div id="iframe">
+                <h1>오시는 길</h1>
+                <div class="sub_title">고객과 함께하는 SPC삼립의 오시는 길을 환영합니다</div>
                 <div class="i_left">
                     <h3>SPC삼립 양재 사옥</h3>
                     <div class="list">
                         <span>Address</span><p>서울특별시 서초구 양재동 남부순환로</p>
                     </div>
                     <div class="list">
-                        <span>전화</span><p>080-739-8572</p>
+                        <span>전화</span><a href="#none"><p>080-739-8572</p></a>
                     </div>
                     <div class="list">
                         <span>대중교통</span><p>지하철3호선 양재역5번출구, 도보3분소요</p>
                     </div>
-                    <div class="tap_menu">
-                        <h3>SPC삼립 사업장</h3>
-                        <ul class="tap">
-                            <li><a href="#none">양재사옥</a></li>
-                            <li><a href="#none">시화공장</a></li>
-                            <li><a href="#none">대구공장</a></li>
-                            <li><a href="#none">충주공장</a></li>
-                            <li><a href="#none">청주공장</a></li>
-                            <li><a href="#none">서천공장</a></li>
-                            <li><a href="#none">세종공장</a></li>
-                        </ul>
-                    </div>
+                    
                     
                 </div>
                 <div class="i_right">
                     <div id="map" ></div>
                     <div class="text"></div>
-                
-                    <script>
-                        // var container = document.getElementById('map');
-                        var container = document.querySelector('#map');
-                        var options = {
-                            center: new kakao.maps.LatLng(37.4844534, 127.037315),
-                            level: 2
-                        };
-                
-                        var map = new kakao.maps.Map(container, options);
-                
-                       
-                        var marker = new kakao.maps.Marker({  // 지도 중심좌표에 마커를 생성합니다
-                             
-                            position: map.getCenter() 
-                        }); 
-                        
-                        // 지도에 마커를 표시합니다
-                        marker.setMap(map);
-                
-                        var text = document.querySelector('.text');
-                         // 지도에 클릭 이벤트를 등록합니다
-                        // 지도를 클릭하면 마지막 파라미터로 넘어온 함수를 호출합니다
-                        kakao.maps.event.addListener(map, 'click', function(mouseEvent) {        
-                            
-                            // // 클릭한 위도, 경도 정보를 가져옵니다 
-                            // var latlng = mouseEvent.latLng; 
-                            
-                            // // 마커 위치를 클릭한 위치로 옮깁니다
-                            // marker.setPosition(latlng);
-                            
-                            // text.innerHTML = "위도 : " + latlng.getLat() + "<br>경도 : " + latlng.getLng();
-                            // 위도 : latlng.getLat()
-                            // 경도 : latlng.getLng()
-                        });    
-                    </script>
+                    
+                    
+                </div>
+                <div class="tap_menu">
+                    <h3>SPC삼립 사업장</h3>
+                    <!-- <ul class="tap">
+                        <li><a href="#none">양재사옥</a></li>
+                        <li><a href="#none">시화공장</a></li>
+                        <li><a href="#none">대구공장</a></li>
+                        <li><a href="#none">충주공장</a></li>
+                        <li><a href="#none">청주공장</a></li>
+                        <li><a href="#none">서천공장</a></li>
+                        <li><a href="#none">세종공장</a></li>
+                    </ul> -->
+                    <table>
+                        <tr><th>공장</th><th class="address">주소</th></tr>
+                        <tr><td>양재사옥</td><td>서울특별시 서초구 남부순환로 2620 (06737)</td></tr>
+                        <tr><td>시화공장</td><td>경기도 시흥시 공단1대로 101 (15085)</td></tr>
+                        <tr><td>대구공장</td><td>대구광역시 달서구 성서로 255 (42704)</td></tr>
+                        <tr><td>충주공장</td><td>충북 충주시 주덕읍 주덕농공길 73 (27462)</td></tr>
+                        <tr><td>청주공장</td><td>충북 청주시 흥덕구 산단로 88 (28578)</td></tr>
+                        <tr><td>서천공장</td><td>충남 서천군 종천면 종천공단길14번길 52 (33613)</td></tr>
+                        <tr><td>세종공장</td><td>세종특별자치시 금남면 진동길 15 (30086)</td></tr>
+                    </table>
                 </div>
             </div>
         </section>
-        <section></section>
+        <section>
+            <h1>Brands</h1>
+        </section>
         <section></section>
         <section></section>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/tap_map.js"></script>
     <!-- <script src="js/scroll.js"></script> -->
 </body>
 </html>
