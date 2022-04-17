@@ -14,6 +14,7 @@ header{
     align-items: center;
     
 }
+body{color: #333;}
 .menu{
     width: 1000px;
     margin: 0 auto;
@@ -69,18 +70,21 @@ header{
 section{
     width: 100%;
     height: 100vh;
+    text-align: center;
 }
-section:nth-child(even){
+section:nth-child(odd){
     background:gainsboro;
 }
+/* slide */
 #slide{
     width: 100%;
     height: 100vh;
     background: url("../img/slide1.jpg") no-repeat;
     background-size:cover;
     /* background-position:center center; */
-    position: absolute;
-    top: 0;
+    /* position: absolute;
+    top: 0; */
+    position: relative;
 }
 .left{
     position: absolute;
@@ -93,6 +97,7 @@ section:nth-child(even){
     right: 30px;
 }
 .arrow img{width: 50px;}
+/* section2 */
 h1{
     line-height: 50px; 
     text-align: center; padding-top: 5%;
@@ -101,7 +106,7 @@ h1{
     width: 100%;
     border-radius:5px;
 }
-p{ font-size: 15px;}
+/* p{ font-size: 15px;} */
 .sub_title{line-height: 40px; text-align: center; width: 100%;}
 #iframe{
     width: 1000px;
@@ -117,7 +122,10 @@ p{ font-size: 15px;}
     width: 60%;
 }
 .list{display: flex; line-height: 50px; justify-content: space-between;}
-.list p{position: relative; right: 50px; text-align: left;}
+.list p{
+    position: relative; right: 50px; text-align: left;
+    font-size: 13px;
+}
 
 #map{
     width: 100%;
@@ -137,27 +145,74 @@ td{padding:0 30px; text-align: left;}
 td, th{
     border-bottom: 1px solid gray;   
 }
-th{border-top: 2px solid black;}
+th{border-top: 2px solid black; background: lightgray;}
 .address{width: 500px;}
-.tap{
-    margin-top: 150px;
-    margin-right: 50px;
-}
-.tap li{
-    width: 100px;
-    border-bottom: 1px solid gray;
-}
-.tap a{
-    line-height: 30px;
-    text-align: center;
-    display: block;
-}
-section:nth-child(3) h1{width: 1000px; margin: 0 auto;}
+
+/* section3 */
+section h1{width: 1000px; margin: 0 auto; }
+section:nth-child(3) h1{border-color:salmon;}
 #brand{width: 100%; display: flex; text-align: center;}
-.family_brands{width: 25%;}
-.bakery{width: 25%;}
-.food{width: 25%;}
-.store_online{width: 25%;}
+.family_brands{width: 25%; }
+#brand h3{line-height: 50px;}
+.sam_logo{
+    width: 50%; background: azure; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.logoes{
+    width: 115px;
+    background: white; 
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    height: 50px;
+}
+/* #brand img{margin: 0 auto;} */
+.family_brands h3{width: 100%;}
+.family_brands{display: flex; flex-wrap: wrap;}
+.family_brands img{width: 100px;}
+.snow img{width: 50px;}
+.family_brands p{line-height: 40px; margin: 0 auto;}
+
+/* section4 */
+section:nth-child(4) h1{border: 0;}
+#notice{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
+    position: relative;
+}
+#notice ul{
+    display: flex;
+    
+}
+.news li{
+    width: calc(100% / 3);
+    line-height: 50px;
+    text-align: center;
+    background: oldlace;
+    border-right: 1px solid gray;
+}
+.news li:nth-child(3){border: 0;}
+.news a{display: block;}
+.news a.on{background: royalblue; color: white;}
+
+.data img{width: 100%; height: 187px;}
+.data li{width: calc(100% / 4); padding: 10px;}
+.plus{
+    width: 100px; line-height: 40px; 
+    position: absolute;
+    right: 0;
+    border: 1px solid gainsboro;
+    color: gray;
+}
+.plus a{display: block;}
+
 @media(max-height:800px) {
     #map{
         width: 100%;
