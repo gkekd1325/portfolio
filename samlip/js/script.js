@@ -64,7 +64,7 @@ $(".sns ul").hover(
     }
 );
 /* notice tap */
-$(".news li:eq(0)").click(
+$(".news li:eq(0) a").click(
     function(){
         $(".news li a").removeClass("on");
         $(".news li a:eq(0)").addClass("on");
@@ -72,7 +72,7 @@ $(".news li:eq(0)").click(
         $(".data").show();
     }
 );
-$(".news li:eq(1)").click(
+$(".news li:eq(1) a").click(
     function(){
         $(".news li a").removeClass("on");
         $(".news li a:eq(1)").addClass("on");
