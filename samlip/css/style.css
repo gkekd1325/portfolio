@@ -14,7 +14,9 @@ header{
     align-items: center;
     
 }
-body{color: #333;}
+body{
+    color: #333;
+}
 .menu{
     width: 1000px;
     margin: 0 auto;
@@ -100,7 +102,7 @@ section:nth-child(odd){
 /* section2 */
 h1{
     line-height: 50px; 
-    text-align: center; padding-top: 5%;
+    text-align: center; padding-top: 10%;
     font-size: 2rem;
     border-bottom: 5px solid deepskyblue;
     width: 100%;
@@ -163,14 +165,14 @@ section:nth-child(3) h1{border-color:salmon;}
     padding: 50px;
 }
 .logoes{
-    width: 115px;
+    width: 40%;
     background: white; 
     margin: 0 auto;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
     padding: 10px;
-    height: 50px;
+    height: 70px;
 }
 /* #brand img{margin: 0 auto;} */
 .family_brands h3{width: 100%;}
@@ -185,7 +187,7 @@ section:nth-child(4) h1{border: 0;}
     width: 1000px;
     margin: 0 auto;
     margin-top: 40px;
-    position: relative;
+    
 }
 #notice ul{
     display: flex;
@@ -202,16 +204,21 @@ section:nth-child(4) h1{border: 0;}
 .news a{display: block;}
 .news a.on{background: royalblue; color: white;}
 
+.data{position: relative;}
 .data img{width: 100%; height: 187px;}
 .data li{width: calc(100% / 4); padding: 10px;}
 .plus{
     width: 100px; line-height: 40px; 
     position: absolute;
+    bottom: -30px;
     right: 0;
     border: 1px solid gainsboro;
     color: gray;
 }
 .plus a{display: block;}
+.insta{display: none;}
+.insta img{width: 100%; height: 187px;}
+.insta li{width: calc(100% / 4); padding: 10px;}
 
 @media(max-height:800px) {
     #map{
@@ -220,4 +227,14 @@ section:nth-child(4) h1{border: 0;}
     }
     h1{padding-top: 1%;}
     table{line-height: 35px;}
+    .logoes{
+        width: 115px;
+        background: white; 
+        margin: 0 auto;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        height: 50px;
+    }
 }

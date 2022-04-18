@@ -63,4 +63,20 @@ $(".sns ul").hover(
         
     }
 );
-
+/* notice tap */
+$(".news li:eq(0)").click(
+    function(){
+        $(".news li a").removeClass("on");
+        $(".news li a:eq(0)").addClass("on");
+        $(".insta").hide();
+        $(".data").show();
+    }
+);
+$(".news li:eq(1)").click(
+    function(){
+        $(".news li a").removeClass("on");
+        $(".news li a:eq(1)").addClass("on");
+        $(".data").hide();
+        $(".insta").show();
+    }
+);
