@@ -70,6 +70,7 @@ $(".news li:eq(0) a").click(
         $(".news li a:eq(0)").addClass("on");
         $(".insta").hide();
         $(".data").show();
+        $(".studio").hide();
     }
 );
 $(".news li:eq(1) a").click(
@@ -78,5 +79,15 @@ $(".news li:eq(1) a").click(
         $(".news li a:eq(1)").addClass("on");
         $(".data").hide();
         $(".insta").show();
+        $(".studio").hide();
+    }
+);
+$(".news li:eq(2) a").click(
+    function(){
+        $(".news li a").removeClass("on");
+        $(".news li a:eq(2)").addClass("on");
+        $(".insta").hide();
+        $(".data").hide();
+        $(".studio").show();
     }
 );
