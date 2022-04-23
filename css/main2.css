@@ -234,21 +234,20 @@ section:nth-child(3){
 }
 .works li{
     width: 200px;
-    height: 200px;
+    list-style: none;
+    /* height: 200px;
     overflow: hidden;
     
-    /* display: inline-block; */
+    display: inline-block;  */
 }
 .works a{
     overflow: hidden;
-    
 }
 .works img:hover{opacity: .6;}
 .works img{
     width: 100%; 
     transition: 0.3s;
-    padding: 0 20px 10 20px;
-    transition: 0.3s;
+    /* padding: 0 20px 10 20px; */
 }
 
 footer{

@@ -55,7 +55,7 @@ var $menu =$("nav a");
 $menu.click(
     function(){
         console.log(111);
-        sectionCounter = $(this).attr('dataNum'); 
+        sectionCounter = $(this).attr('class'); 
         offset =innerHeight*sectionCounter;
         $("html, body").stop().animate({scrollTop:offset},600,"easeInOutExpo");
     }

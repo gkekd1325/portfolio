@@ -39,12 +39,13 @@ function scrollAni(e){
 }
 /* section 이동메뉴 */
 /* jquery */
-
+var arr=[0, 1, 2, 3, 4, 5];
+var i=0;
 var $menu =$(".menu a");
 $menu.click(
     function(){
         console.log(111);
-        sectionCounter = $(this).attr('dataNum'); /* 현재 선택한 것의 dataNum이라는 속성을 가져온다 */
+        sectionCounter = $(this).attr('class'); /* 현재 선택한 것의 dataNum이라는 속성을 가져온다 */
         offset =innerHeight*sectionCounter;
         $("html, body").stop().animate({scrollTop:offset},600,"easeInOutExpo");
     }
