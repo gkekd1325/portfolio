@@ -237,8 +237,25 @@ footer{width: 100%; background: powderblue; padding-bottom: 15px;}
     font-size: 13px;
 }
 .under img{width: 50px; position: relative; top: 10px;}
-.f_right{width: 50%;}
+.f_right{width: 50%; display: flex; justify-content: space-between;}
+.site{
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    margin-top: 20px;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
 footer p{font-size: 13px; color: gray;}
+select{
+    border-color: 2px solid wheat;
+    width: 140px;
+    height: 44px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
 @media(max-height:800px) {
     #map{
         width: 100%;
