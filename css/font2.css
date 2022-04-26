@@ -4,10 +4,16 @@
     font-weight: normal;
     font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
 h1{font-family: 'Secular One', sans-serif;}
+h3{font-size: 30px;}
 nav a{
     font-family: 'Prompt', sans-serif;
 }
 #nav a{
     font-family: 'Prompt', sans-serif;
+}
+.notice ul{
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: bold;
 }

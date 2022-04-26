@@ -9,6 +9,7 @@ var i=0;
 var left =document.querySelector(".left");
 var right=document.querySelector(".right");
 var slide=document.querySelector("#slide");
+var count=0;
 
 left.addEventListener("click", reverse);
 right.addEventListener("click", move);
@@ -42,6 +43,21 @@ function reverse(){
 function interVal(){
     setInterval(move, 6000); /* 6초마다 move함수 실행 */
 }
+
+$(".step a").click(
+    function(){
+        count=$(this).attr("class");
+        slide.style.background="url("+arr[count]+")";
+        slide.style.transition="0.6s";
+        slide.style.backgroundSize="cover";
+        $(".step a").removeClass("on");
+        $(this).addClass("on");
+        
+    }
+    
+)
+
+
 
 $(".menu li").hover(
     function(){

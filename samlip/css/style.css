@@ -101,6 +101,21 @@ section:nth-child(odd){
     right: 30px;
 }
 .arrow img{width: 50px;}
+.step{
+    display: flex; justify-content: space-around;
+    width: 150px;
+    margin: 0 auto;
+}
+.step a{
+    width: 20px; 
+    height: 20px; 
+    display: block; 
+    background:powderblue;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+}
+.step a.on{background: cyan;}
 /* section2 */
 h1{
     line-height: 50px; 
