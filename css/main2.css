@@ -235,15 +235,26 @@ section:nth-child(3){
 .works li{
     width: 200px;
     list-style: none;
-    /* height: 200px;
+    height: 200px;
     overflow: hidden;
+    position: relative;
     
-    display: inline-block;  */
+    /* display: inline-block;   */
+}
+.box{
+    width: 200px; height: 200px;
+    background: rgba(125, 12, 217, 0.6);
+    transform: translate(-100px, 300px);
+    transition: 0.4s;
+    /* position: absolute;
+    top: 0;
+    left: 50px; */
 }
 .works a{
     overflow: hidden;
+    
 }
-.works img:hover{opacity: .6;}
+.works li:hover .box{transform: translate(-100px,-100px);}
 .works img{
     width: 100%; 
     transition: 0.3s;
