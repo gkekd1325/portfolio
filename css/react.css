@@ -17,7 +17,7 @@
 
     .bar{width: 100%;}
     .notice{width: 100%;}
-
+    .works{width: 500px;}
 }
 @media(max-width:450px) {
     nav{display: none;}
@@ -32,7 +32,8 @@
         flex-wrap: wrap;
         flex-direction: row;
     }
-    .works img{width: 80px;}
+    .works li{width: 80px;}
+    .trans{display: none;}
     /* body{
         padding-bottom: 20px;
     } */
