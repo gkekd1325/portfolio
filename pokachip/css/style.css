@@ -71,3 +71,7 @@ footer{
     background: #0064A6;
 }
 footer img{width: 80%; margin: 0 auto; padding:5% 0;}
+
+@media(max-Width:450px){
+    .head img{width: 50%;}
+}
