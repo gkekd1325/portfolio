@@ -14,6 +14,7 @@ img{border: 0; display: block; width: 100%;}
     background: #00A2F2;
     position: relative;
     padding-top: 5%;
+    overflow: hidden;
 }
 #title{
     width: 90%;
@@ -67,6 +68,14 @@ img{border: 0; display: block; width: 100%;}
     padding-bottom: 10%;
 }
 .product img{padding-top: 10%;}
+.original{
+    transform: translateX(-100%);
+    transition: 0.3s;
+}
+.onion{
+    transform: translateX(100%);
+    transition: 0.3s;
+}
 footer{
     background: #0064A6;
 }
