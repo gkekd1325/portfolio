@@ -132,7 +132,7 @@ section:nth-child(1){
     50%{opacity: 1;} /* 배경애니 */
 }
 .box{
-    width: 500px;
+    width: 20%;
     height: 100px;
     overflow: hidden;
     position: absolute;
@@ -266,7 +266,6 @@ section:nth-child(3){
     width: 100%; 
     transition: 0.3s;
 }
-
 footer{
     background:midnightblue;
     color: white;
@@ -275,13 +274,13 @@ footer{
 }
 
 footer h2{
-    font-size: 2rem; line-height: 40px;
+    font-size: 2rem; line-height: 80px;
 }
 footer p{line-height: 30px; font-size: 20px;}
 footer p:nth-child(2){
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 footer span{color: lime;}
 .git{display: flex; justify-content: center;}
-footer img{width: 50px;}
+footer img{width: 50px; padding-bottom: 10px;}
 
