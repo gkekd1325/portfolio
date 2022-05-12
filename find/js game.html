@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숨은 꼬꼬 찾기</title>
+    <style>
+        h1 {color: white; text-align: center;}
+	    hr {border: 2px solid white;}
+        body{background: seagreen;}
+    </style>
+</head>
+<body>
+    <h1>숨은 꼬꼬 찾기</h1>
+	<hr>
+	<div id="demo"></div>
+</body>
+<script>
+    var a=20;
+	
+	var x= setInterval(function(){
+		document.getElementById("demo").innerHTML=a+"초";
+		a--;
+		if(a<0) {
+			clearInterval(x);
+			alert("GAMEOVER");
+		}
+	},1000);
+    var i=0;
+    // var body=document.querySelector("body");
+    window.addEventListener("click", life);
+    function life(){
+        i++;
+        if(i==10){
+            alert("GAMEOVER");
+            a=0;
+        }
+    }
+</script>
+</html>
