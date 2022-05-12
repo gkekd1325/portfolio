@@ -9,6 +9,7 @@ nav{
     position: fixed;
     top: 0;
 }
+.menu{width: 60%; margin: 0 auto; display: flex;}
 nav a{
     width: calc(100% / 4);
     text-align: center;
@@ -117,6 +118,7 @@ section:nth-child(1) h1{
     left: 50%;
     transform: translateX(-50%);
     animation: fade 6s;
+    margin: 0;
 }
 section:nth-child(1){
     background: url("https://cdn.pixabay.com/photo/2020/09/01/06/00/sky-5534319_960_720.jpg") no-repeat;
@@ -173,12 +175,13 @@ h1{
     text-align: center;
     font-size: 4rem;
 }
+.who{width: 70%; margin: 0 auto; display: flex;}
 .profile{
     width: calc(40% - 10%);
     padding-left: 10%;
     
 }
-h1{width: 100%;}
+h1{width: 100%; margin-top: 10%;}
 .profile img{
     width: 300px;
     height: 300px;
@@ -190,6 +193,7 @@ h1{width: 100%;}
     font-size: 20px;
     line-height: 40px;
     /* font-weight: bold; */
+    margin-top: 10%;
 }
 progress{
     height: 30px;
@@ -233,13 +237,17 @@ section:nth-child(3){
     display: flex;
     justify-content: space-around;
 }
-.works li{
+.works li{list-style: none;}
+.works a{
     width: 200px;
     list-style: none;
     height: 200px;
     overflow: hidden;
     position: relative;
+    display: block;
+    border: 2px solid gray;
 }
+
 .trans{
     width: 200px; height: 200px;
     background: rgba(125, 12, 217, 0.6);
@@ -261,13 +269,13 @@ section:nth-child(3){
     transform: translate(-50%, -50%); */
     text-align: center;
 }
-.works li:hover .trans{transform: translate(0,-200px);}
+.works a:hover .trans{transform: translate(0,-200px);}
 .works img{
     width: 100%; 
     transition: 0.3s;
 }
 footer{
-    background:midnightblue;
+    background: rgb(0, 82, 136);
     color: white;
     text-align: center;
     padding-bottom: 20px;
