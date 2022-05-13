@@ -38,7 +38,6 @@
     .works li{width: 100%; padding: 5px;}
     .works a{width: 100%; height: 150px;}
     .trans{display: none;}
-    /* body{
-        padding-bottom: 20px;
-    } */
+    .text li{font-size: 60%;}
+    section{font-size: 60%;}
 }

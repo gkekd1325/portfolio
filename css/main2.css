@@ -13,12 +13,12 @@ nav{
 nav a{
     width: calc(100% / 4);
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 50px;
     transition: 0.3s;
     color: white;
 }
-nav a:hover{color: yellow;}
+nav a:hover{color: yellow; background: rgb(112, 195, 250);}
 
 /* 모바일버전 nav */
 #nav{
@@ -124,7 +124,6 @@ section:nth-child(1){
     background: url("https://cdn.pixabay.com/photo/2020/09/01/06/00/sky-5534319_960_720.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
-
     animation: fade 6s;
     color: white;
 }
@@ -175,10 +174,10 @@ h1{
     text-align: center;
     font-size: 4rem;
 }
-.who{width: 70%; margin: 0 auto; display: flex;}
+.who{width: 60%; margin: 0 auto; display: flex; flex-wrap: wrap;}
 .profile{
-    width: calc(40% - 10%);
-    padding-left: 10%;
+    width: 40%;
+    /* padding-left: 10%; */
     
 }
 h1{width: 100%; margin-top: 10%;}
@@ -188,8 +187,8 @@ h1{width: 100%; margin-top: 10%;}
 }
 .profile li{list-style: none;}
 .text{
-    width: calc(60% - 5%);
-    padding-left: 5%;
+    width: 60%;
+    /* padding-left: 5%; */
     font-size: 20px;
     line-height: 40px;
     /* font-weight: bold; */
@@ -237,7 +236,10 @@ section:nth-child(3){
     display: flex;
     justify-content: space-around;
 }
-.works li{list-style: none;}
+.works li{
+    list-style: none; width: 200px; text-align: center;
+    line-height: 30px;
+}
 .works a{
     width: 200px;
     list-style: none;
