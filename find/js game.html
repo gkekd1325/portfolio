@@ -6,35 +6,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>숨은 꼬꼬 찾기</title>
     <style>
-        h1 {color: white; text-align: center;}
-	    hr {border: 2px solid white;}
         body{background: seagreen;}
+        h1 {color: white; text-align: center;}
+	    hr {border: 2px solid white;}        
+        #wrap{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            margin-top: 5%;
+        }
+        .left{
+            width: 50%; line-height: 40px; 
+            text-align: center;
+            margin: 20px 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .right{
+            width: 50%; display: flex; flex-wrap: wrap;
+            background: palegreen;
+        }
+        #demo{
+            
+            margin: 20px 0;
+            width: 60%;
+            background: palegreen;
+        }
+        #click_count{
+            width: 60%;
+            background: palegreen;
+        }
+        .replay{
+            width: 60%;
+            background: palegreen;
+            margin: 20px 0;
+        }
+        .how{
+            width: 80%;
+            color: white;
+            text-align: center;
+        }
+        .right img{width: 20%;}
     </style>
 </head>
 <body>
     <h1>숨은 꼬꼬 찾기</h1>
 	<hr>
-	<div id="demo"></div>
+    <div id="wrap">
+        <div class="left">
+            <div id="demo">20초</div>
+            <div id="click_count">남은 횟수 10</div>
+            <div class="replay">
+                <a onClick="window.location.reload()" style="cursor: pointer;">다시하기</a>
+            </div>
+            <div class="how">
+                제한시간 안에 닭 3마리를 찾으세요. <br>
+                기회는 10번 입니다.
+            </div>
+        </div>
+        <div class="right">
+            <img src="img/egg.png" alt="에그" >
+            <img src="img/egg.png" alt="에그" id="chicken2" class="two">
+            <img src="img/egg.png" alt="에그">
+            <img src="img/egg.png" alt="에그">
+            <img src="img/egg.png" alt="에그">
+            <img src="img/egg.png" alt="에그">
+            <img src="img/egg.png" alt="에그">
+            <img src="img/egg.png" alt="에그">
+            <img src="img/egg.png" alt="에그"><img src="img/egg.png" alt="에그"><img src="img/egg.png" alt="에그"><img src="img/egg.png" alt="에그" id="chicken3" class="three"><img src="img/egg.png" alt="에그"><img src="img/egg.png" alt="에그"><img src="img/egg.png" alt="에그"><img src="img/egg.png" alt="에그"><img src="img/egg.png" alt="에그"><img src="img/egg.png" alt="에그" id="chicken" class="one"><img src="img/egg.png" alt="에그"><img src="img/egg.png" alt="에그">
+        </div>
+    </div>
+	
 </body>
 <script>
-    var a=20;
+    var time=20;
 	
 	var x= setInterval(function(){
-		document.getElementById("demo").innerHTML=a+"초";
-		a--;
-		if(a<0) {
+		document.getElementById("demo").innerHTML=time+"초";
+		time--;
+		if(time<0) {
 			clearInterval(x);
 			alert("GAMEOVER");
+            document.querySelector(".one").removeAttribute("id");
+            document.querySelector(".two").removeAttribute("id");
+            document.querySelector(".three").removeAttribute("id");
 		}
 	},1000);
-    var i=0;
-    // var body=document.querySelector("body");
-    window.addEventListener("click", life);
+    var count=9; /* 클릭 수 */
+    var board=document.querySelector(".right"); /* 보드 */
+    var c=0; /* 숨은 닭 수 */
+    
+    window.addEventListener("click", life); /* 클릭 수 */
     function life(){
-        i++;
-        if(i==10){
-            alert("GAMEOVER");
-            a=0;
+        document.getElementById("click_count").innerHTML="남은 횟수 "+count;
+        --count;
+        if(count==-1){
+            time=0;
+            count++;
+            document.querySelector(".one").removeAttribute("id");
+            document.querySelector(".two").removeAttribute("id");
+            document.querySelector(".three").removeAttribute("id");
+        }
+    }
+    var chick=document.querySelector("#chicken");
+    var chick2=document.querySelector("#chicken2");
+    var chick3=document.querySelector("#chicken3");
+    chick.addEventListener("click", cha_img, {once : true});
+    chick2.addEventListener("click", cha_img2, {once : true});
+    chick3.addEventListener("click", cha_img3, {once : true});
+    function cha_img(){
+            document.getElementById("chicken").src="img/chicken.png";
+            c++;
+    }
+    function cha_img2(){
+            document.getElementById("chicken2").src="img/chicken.png";
+            c++;
+    }
+    function cha_img3(){
+            document.getElementById("chicken3").src="img/chicken.png";
+            c++;
+    }
+    window.addEventListener("click", win);
+    function win(){
+        if(c==3){
+                alert("Victory!");
+                time=0;
+                count=0;
+                c=0;
         }
     }
 </script>
