@@ -202,15 +202,27 @@ h1{width: 100%; margin-top: 10%;}
     /* font-weight: bold; */
     margin-top: 10%;
 }
-progress{
-    height: 30px;
-    width: 30%;    
-    margin-right: 10px;
+table{
+    border-collapse: collapse;
+    margin-top: 5%;
 }
+th, td{
+    border: 1px solid #333; text-align: center; padding: 5px;
+    border-left: 0;
+    border-right: 0;
+}
+td{background: aliceblue;}
+th{background: powderblue;}
+/* skill */
 section:nth-child(3){
     display: flex;
     justify-content: space-around;
     overflow: hidden;
+}
+progress{
+    height: 30px;
+    width: 30%;    
+    margin-right: 10px;
 }
 .bar{ /* 수치문단 */
     width: calc(50% - 10%);    
@@ -288,6 +300,7 @@ section:nth-child(3){
     width: 100%; 
     transition: 0.3s;
 }
+.chi{height: 200px;}
 footer{
     background: rgb(0, 82, 136);
     color: white;
