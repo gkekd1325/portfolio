@@ -76,64 +76,63 @@
             <img src="img/egg.png" alt="에그"><img src="img/egg.png" alt="에그"><img src="img/egg.png" alt="에그"><img src="img/egg.png" alt="에그" id="chicken3" class="three"><img src="img/egg.png" alt="에그"><img src="img/egg.png" alt="에그"><img src="img/egg.png" alt="에그"><img src="img/egg.png" alt="에그"><img src="img/egg.png" alt="에그"><img src="img/egg.png" alt="에그" id="chicken" class="one"><img src="img/egg.png" alt="에그"><img src="img/egg.png" alt="에그">
         </div>
     </div>
-	
-</body>
-<script>
-    var time=20;
-	
-	var x= setInterval(function(){
-		document.getElementById("demo").innerHTML=time+"초";
-		time--;
-		if(time<0) {
-			clearInterval(x);
-			alert("GAMEOVER");
-            document.querySelector(".one").removeAttribute("id");
-            document.querySelector(".two").removeAttribute("id");
-            document.querySelector(".three").removeAttribute("id");
-		}
-	},1000);
-    var count=9; /* 클릭 수 */
-    var board=document.querySelector(".right"); /* 보드 */
-    var c=0; /* 숨은 닭 수 */
-    
-    window.addEventListener("click", life); /* 클릭 수 */
-    function life(){
-        document.getElementById("click_count").innerHTML="남은 횟수 "+count;
-        --count;
-        if(count==-1){
-            time=0;
-            count++;
-            document.querySelector(".one").removeAttribute("id");
-            document.querySelector(".two").removeAttribute("id");
-            document.querySelector(".three").removeAttribute("id");
-        }
-    }
-    var chick=document.querySelector("#chicken");
-    var chick2=document.querySelector("#chicken2");
-    var chick3=document.querySelector("#chicken3");
-    chick.addEventListener("click", cha_img, {once : true});
-    chick2.addEventListener("click", cha_img2, {once : true});
-    chick3.addEventListener("click", cha_img3, {once : true});
-    function cha_img(){
-            document.getElementById("chicken").src="img/chicken.png";
-            c++;
-    }
-    function cha_img2(){
-            document.getElementById("chicken2").src="img/chicken.png";
-            c++;
-    }
-    function cha_img3(){
-            document.getElementById("chicken3").src="img/chicken.png";
-            c++;
-    }
-    window.addEventListener("click", win);
-    function win(){
-        if(c==3){
-                alert("Victory!");
+	<script>
+        var time=20;
+        
+        var x= setInterval(function(){
+            document.getElementById("demo").innerHTML=time+"초";
+            time--;
+            if(time<0) {
+                clearInterval(x);
+                alert("GAMEOVER");
+                document.querySelector(".one").removeAttribute("id");
+                document.querySelector(".two").removeAttribute("id");
+                document.querySelector(".three").removeAttribute("id");
+            }
+        },1000);
+        var count=9; /* 클릭 수 */
+        var board=document.querySelector(".right"); /* 보드 */
+        var c=0; /* 숨은 닭 수 */
+        
+        window.addEventListener("click", life); /* 클릭 수 */
+        function life(){
+            document.getElementById("click_count").innerHTML="남은 횟수 "+count;
+            --count;
+            if(count==-1){
                 time=0;
-                count=0;
-                c=0;
+                count++;
+                document.querySelector(".one").removeAttribute("id");
+                document.querySelector(".two").removeAttribute("id");
+                document.querySelector(".three").removeAttribute("id");
+            }
         }
-    }
-</script>
+        var chick=document.querySelector("#chicken");
+        var chick2=document.querySelector("#chicken2");
+        var chick3=document.querySelector("#chicken3");
+        chick.addEventListener("click", cha_img, {once : true});
+        chick2.addEventListener("click", cha_img2, {once : true});
+        chick3.addEventListener("click", cha_img3, {once : true});
+        function cha_img(){
+                document.getElementById("chicken").src="img/chicken.png";
+                c++;
+        }
+        function cha_img2(){
+                document.getElementById("chicken2").src="img/chicken.png";
+                c++;
+        }
+        function cha_img3(){
+                document.getElementById("chicken3").src="img/chicken.png";
+                c++;
+        }
+        window.addEventListener("click", win);
+        function win(){
+            if(c==3){
+                    alert("Victory!");
+                    time=0;
+                    count=0;
+                    c=0;
+            }
+        }
+    </script>
+</body>
 </html>

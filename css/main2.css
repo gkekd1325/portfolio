@@ -147,17 +147,25 @@ section:nth-child(1){
     50%{transform: translate(0, 0);}  /* 박스애니메이션 */
 }
 .night img{
-    width: 150px; height: 150px;
-    animation: rotate 12s infinite;
+    width: 20%;
+    /* animation: rotate 12s infinite; */
+}
+.night a{
+    display: flex; align-items: center; justify-content: center;
+    border: deepskyblue 2px solid;
+    color: deepskyblue;
 }
 @keyframes rotate {
     100%{transform: rotate(360deg);}
 }
 .night{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-70%, -50%);
+    position: fixed;
+    width: 10%;
+    top: 90%;
+    left: 80%;
+    /* transform: translate(-70%, -50%); */
+    font-size: 20px;
+    z-index: 30;
 }
 section:nth-child(1) p{
     transform: translate(0, 0px);
@@ -197,6 +205,7 @@ h1{width: 100%; margin-top: 10%;}
 progress{
     height: 30px;
     width: 30%;    
+    margin-right: 10px;
 }
 section:nth-child(3){
     display: flex;
@@ -212,6 +221,7 @@ section:nth-child(3){
 .per{ /* 언어 별 수치 문단*/
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     line-height: 30px;
     padding: 5px 0;
 }
@@ -235,10 +245,12 @@ section:nth-child(3){
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .works li{
     list-style: none; width: 200px; text-align: center;
     line-height: 30px;
+    padding: 5px;
 }
 .works a{
     width: 200px;
