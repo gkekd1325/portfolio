@@ -1,5 +1,10 @@
 @media all and (max-height: 800px) {
     .profile img{width: 200px; height: 200px;}
+    h1{margin-top: 3%;}
+    .text{margin-top: 4%;}
+    .works li{width: 190px;}
+    .works a{width: 190px;}
+    .trans{width: 190px;}
 }
 
 @media(max-width:600px){
