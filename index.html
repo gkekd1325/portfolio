@@ -4,112 +4,162 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio 2022</title>
+    <title>PortFolio Traning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/pop_UQI_icon.ico">
     <link rel="icon" href="img/pop_UQI_icon.ico">
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/font.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="css/reset2.css">
+    <link rel="stylesheet" href="css/font2.css">
+    <link rel="stylesheet" href="css/main2.css">
+    <link rel="stylesheet" href="css/react.css">
+    <script src="js/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
 </head>
 <body>
-    <!-- <ul class="menu">
-        <li><a href="#none" dataNum ='0'>section1</a></li>
-        <li><a href="#none" dataNum ='1'>section2</a></li>
-        <li><a href="#none" dataNum ='2'>section3</a></li>
-        <li><a href="#none" dataNum ='3'>section4</a></li>
-        <li><a href="#none" dataNum ='4'>section5</a></li>
-        <li><a href="#none" dataNum ='5'>section6</a></li>
-    </ul> -->
-    <div id="popupNav">
-        <nav>
-            <div class="burger">
-                <div class="navbar"></div>
-                <div class="navbar"></div>
-                <div class="navbar"></div>
-                <div class="navbar"></div>
-            </div>
-            <div class="menu">
-                <li><a href="#none" class="0">section1</a></li>
-                <li><a href="#none" class="1">section2</a></li>
-                <li><a href="#none" class="2">section3</a></li>
-                <li><a href="#none" class="3">section4</a></li>
-                <li><a href="#none" class="4">section5</a></li>
-                <li><a href="#none" class="5">section6</a></li>
-            </div>
-        </nav>
+    <nav>
+        <ul class="menu">
+            <a href="#Home" class='0'>Home</a>
+            <a href="#who" class='1'>Who</a>
+            <a href="#Language" class='2'>Language</a>
+            <a href="#Works" class='3'>Works</a>
+        </ul>
+    </nav>
+    <div id="nav">
+        <div class="nav">
+            <h2>Beginner's PortFolio</h2>
+            <a href="#none" class="ham">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </a>
+            <a href="#none" class="close">            
+                <div class="x"></div>                
+                <div class="x"></div>                    
+            </a>
+        </div>    
+        <ul class="m_menu">
+            <li><a href="#Home" class="0">Home</a></li>
+            <li><a href="#who" class="1">Who</a></li>
+            <li><a href="#Language" class="2">Language</a></li>
+            <li><a href="#Works" class="3">Works</a></li>
+        </ul>                                
     </div>
     <div id="wrap">
+        
         <section>
-            <video autoplay loop muted poster="" id="bgvideo">
-                <source src="park.mp4" type="video/mp4">
-            </video>
-            <h3>PortFolio</h3>
-            <p>취업을 위한 포트폴리오 입니다. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dolore distinctio illum perspiciatis ullam sequi esse maiores dignissimos excepturi corrupti aliquid voluptates minus vel voluptas temporibus eaque recusandae, officiis culpa. </p>
+            <h1 id="Home">Beginner's <br> PortFolio</h1>                                                               
+            <div class="background"></div>
+            <div class="box">
+                <p>오류 발생 시 해결하기 위해 노력 하는 웹 포트폴리오 입니다. 
+                     
+                </p>
+            </div>
+            <div class="night">
+                <a href="#none">나이트 모드<img src="img/Moon.png" alt="나이트모드" id="nightimg"></a>
+            </div>
+            
         </section>
         <section>
-            <div class="left">
-                사진 이미지
-                <i class="fab fa-instagram"></i>
-                <img src="img/logo.svg" alt="">
+            <h1 id="who">Who</h1> 
+            <div class="who">
+                <div class="profile">
+                    <ul>
+                        <li><img src="img/logo.svg" alt="사진" class="me"></li>
+                        <li><img src="img/Name.jpg" alt="사진"></li>
+                    </ul>
+                    캐리커쳐, 사진
+                </div>                                
+            <div class="text">
+                <h3>About</h3>          
+                <table>
+                    <tr><th>Certificate</th><td>정보처리기사, 컴퓨터활용능력2급, 웹디자인기능사</td>
+                    </tr>
+                    <tr><th>학력</th><td>2022.02.21 <br> 동신대학교 정보보안학과 졸업</td></tr>
+                    <tr><th>교육 및 연수</th><td>한양직업전문학교 <br> UI/UX 웹디자인 퍼블리셔 수료</td></tr>
+                    <tr><th><i class="fas fa-phone"></i> 연락처</th><td>010-2922-7189</td></tr>
+                    <tr><th><i class="fas fa-envelope"></i> 이메일</th><td>gkekd1325@naver.com</td></tr>                                                                                
+                </table>      
+                    <!-- <ul>
+                        <li> : , , </li>
+                        <li>2022.02.21 <br> 동신대학교 정보보안학과 졸업</li>
+                        <li></li>
+                        <li> </li>
+                        <li> </li>
+                    </ul>                  -->
+                
             </div>
-            <div class="right">
-                텍스트, 경력 학력, 자격증, 수상내역
-            </div>
-        </section>
-        <section>
-            <div class="left ">
-                작품설명 명함
-                <div class="title">
-                    01 Name Card
-                </div>
-                <div class="card">
-                    <h1>01</h1>
-                    <h2>명함디자인</h2>
-                    <h3>Name Card Design</h3>
-                    <div class="bar"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut perferendis et numquam praesentium voluptatem! Modi sunt ipsam nemo voluptas ab dolore rem autem expedita cumque! Explicabo tempora magni aut rem?
-                    Facilis est officiis, aliquam earum provident aliquid molestias accusantium quae recusandae quidem voluptates quod, assumenda praesentium ex fugiat omnis minima optio pariatur dolor deserunt doloremque reiciendis ipsum sequi. Qui, culpa.</p>
-                </div>
-            </div>
-            <div class="right ">
-                <div class="mokup">
-                </div>               
-            </div>
-        </section>
-        <section>
-            <div class="left ">
-                작품설명 명함
-                <div class="title">
-                    01 Name Card
-                </div>
-                <div class="card">
-                    <h1>01</h1>
-                    <h2>명함디자인</h2>
-                    <h3>Name Card Design</h3>
-                    <div class="bar"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut perferendis et numquam praesentium voluptatem! Modi sunt ipsam nemo voluptas ab dolore rem autem expedita cumque! Explicabo tempora magni aut rem?
-                    Facilis est officiis, aliquam earum provident aliquid molestias accusantium quae recusandae quidem voluptates quod, assumenda praesentium ex fugiat omnis minima optio pariatur dolor deserunt doloremque reiciendis ipsum sequi. Qui, culpa.</p>
-                </div>
-            </div>
-            <div class="right ">
-                <div class="mokup">
-                </div>
-               
             </div>
         </section>
         <section>
-            <div class="left">
-                대표작
+            <h1 id="Language">Language</h1>
+            <div class="bar">
+                <div class="per">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="">
+                <progress value="70" max="100"></progress> 70% 
+                </div>                             
+                <div class="per">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="">
+                <progress value="70" max="100"></progress> 70%
+                </div>           
+                <div class="per">
+                    <img src="https://media.vlpt.us/images/hikoand/post/7a027ba4-e221-42c3-9b43-998757a9f156/2541853857EA02BC16.gif" alt="">
+                <progress value="10" max="100"></progress> 15%
+                </div>
+                <div class="per">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1920px-Adobe_Illustrator_CC_icon.svg.png" alt="">
+                <progress value="5" max="100"></progress> 5%
+                </div>
+                <div class="per">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png" alt="">
+                <progress value="30" max="100"></progress> 30%
+                </div>                
             </div>
-            <div class="right">
-                프로필
+            <div class="notice">
+                <ul>
+                    <li>HTML - UI/웹 페이지 구상 , 메인페이지 모바일작성(개발자모드)</li>
+                    <li>CSS - 애니메이션, 채색작업, 일부 반응형, 배치작업</li>
+                    <li>JQuery - 클릭 탭 표시, 메뉴 클릭 시 스크롤</li>
+                    <li>AI - 태양/달 그림, 캐리커쳐, 달걀</li>
+                    <li>JS - 야간모드, 클릭 시 이미지 변경, 스크롤 시 애니메이션, <br> 이미지 슬라이드, 스크롤 버튼</li>
+                </ul>
             </div>
         </section>
-        <section></section>
+        <section>
+            <h1 id="Works">Works</h1>
+            <div class="works">
+                <ul>
+                    <li><a href="project01/index.html" target="blink"><img src="img/project01.png" alt="오뚜기"><div class="trans"><p>오뚜기 메인페이지 <br> 클론코딩</p></div></a>오뚜기 메인페이지 클론코딩 입니다.</p></li>
+                    <li><a href="emart/index.html" target="blink"><img src="img/emart.png" alt="이마트"><div class="trans"><p>이마트 메인페이지 <br> 클론코딩, 리뉴얼</p></div></a>이마트 스토어 홈페이지 리뉴얼/클론코딩 입니다.</li>
+                    <li><a href="samlip/index.html" target="blink"><img src="img/samlip.png" alt="삼립"><div class="trans"><p>삼립 메인페이지 <br> 클론코딩, 리뉴얼</p></div></a>삼립 홈페이지 메뉴를 토대로 한 클론코딩/리뉴얼 입니다.</li>
+                    <li><a href="pokachip/index.html" target="blink"><img src="img/pokachip.png" alt="포카칩"><div class="trans"><p>포카칩 배너</p></div></a>피그마를 사용해 퍼블리싱한 포카칩 배너입니다.</li>
+                    <li><a href="find/js game.html" target="blink"><img src="img/js game.png" alt="find" class="chi"><div class="trans"><p>숨은꼬꼬찾기</p></div></a>자바스크립트를 사용해 만든 제한시간 안에 닭을 찾는 게임입니다.</li>
+                </ul>
+            </div>
+            
+        </section>
+        <footer>
+            <h2>contact me</h2>
+            <p>
+                <i class="fas fa-phone"></i> 010-2922-7189 <br>
+                <i class="fas fa-envelope"></i> gkekd1325@naver.com
+            </p>
+            <div class="git">
+                <a href="#none">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Font_Awesome_5_brands_github.svg/1024px-Font_Awesome_5_brands_github.svg.png" alt="깃허브">
+                </a>
+            </div>
+            
+            &copy; Copyright2022 Created by <span>Jimin</span> 
+
+        </footer>
     </div>
-    <script src="js/scroll practice.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/night.js"></script>
+    <script src="js/mobile.js"></script>
 </body>
 </html>

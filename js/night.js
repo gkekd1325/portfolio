@@ -2,6 +2,7 @@ var moon=document.querySelector(".night");
 var body=document.querySelector("body");
 var section=document.querySelector("section");
 var sub_title=document.querySelector(".box");
+var table=document.querySelector("table");
 
 moon.addEventListener("click", one);
 function one(){
@@ -12,6 +13,7 @@ function one(){
         section.style.transition="0.6s";
         document.getElementById("nightimg").src="img/sun.png";
         sub_title.style.color="blue";
+        table.style.color="#333";
     }
     else{
         body.style.background="white";

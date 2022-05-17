@@ -166,6 +166,7 @@ section:nth-child(1){
     /* transform: translate(-70%, -50%); */
     font-size: 20px;
     z-index: 30;
+    background: rgba(255, 255, 255, .6) 
 }
 section:nth-child(1) p{
     transform: translate(0, 0px);
@@ -194,6 +195,7 @@ h1{width: 100%; margin-top: 10%;}
     height: 300px;
 }
 .profile li{list-style: none;}
+.profile li:nth-child(2) img{border-radius: 50%; border: rgb(112, 195, 250) 4px solid;}
 .text{
     width: 60%;
     /* padding-left: 5%; */
