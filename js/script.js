@@ -15,7 +15,8 @@
 /* 스크롤 애니메이션 */
 var d=document.querySelector(".me");
 window.addEventListener("wheel", ent);
-var bar=document.querySelector(".bar");
+var publishing=document.querySelector(".publishing");
+var design=document.querySelector(".design");
 var notice=document.querySelector(".notice");
 var nav=document.querySelector("nav");
 
@@ -38,11 +39,13 @@ function ent(){
         d.style.opacity="0";
     }
     if(scrollY>=1200){
-        bar.style.transform="translateX(10%)";
+        publishing.style.transform="translateX(10%)";
+        design.style.transform="translateX(15%)";
         notice.style.transform="translateX(10%)";
     }
     else{
-        bar.style.transform="translateX(-50%)";
+        publishing.style.transform="translateX(-150%)";
+        design.style.transform="translateX(-150%)"
         notice.style.transform="translateX(100%)";
     }
 }
