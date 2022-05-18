@@ -154,7 +154,7 @@ section:nth-child(1){
 .night a{
     display: flex; align-items: center; justify-content: center;
     /* border: deepskyblue 2px solid; */
-    color: deepskyblue;
+    color: #333;
     font-size: 15px;
     line-height: 40px;
 }
@@ -169,7 +169,8 @@ section:nth-child(1){
     /* transform: translate(-70%, -50%); */
     font-size: 20px;
     z-index: 30;
-    background: rgba(255, 255, 255, .6) 
+    background: rgba(255, 255, 255, .6);
+    border-radius: 20px;
 }
 section:nth-child(1) p{
     transform: translate(0, 0px);
