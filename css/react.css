@@ -37,6 +37,7 @@
     progress{width: 100%;}
     .publishing{width: 40%; transform: translateX(10%)}
     .design{width: 40%; transform: translateX(15%)}
+    .notice{transform:translateX(10%)}
     td, th{font-size: 50%; padding: 0 10px;}
     /* .bar img{width: 40%;} */
     .notice li{font-size: 60%;}
