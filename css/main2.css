@@ -239,10 +239,16 @@ progress{
     transform: translateX(-80%);
     transition: 0.6s;
 }
+.publishing.on{
+    transform: translateX(10%);
+}
 .design{
     width: calc(20%);    
     transform: translateX(-120%);
     transition: 0.6s;
+}
+.design.on{
+    transform: translateX(15%);
 }
 .per{ /* 언어 별 수치 문단*/
     display: flex;

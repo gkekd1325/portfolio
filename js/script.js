@@ -50,7 +50,12 @@ function ent(){
     }
 }
 /* 스크립트에 클래스를 추가(on이라는 클래스가 추가되었을떄 실행) 하고 스타일시트로 실행 어떻?*/
-
+var mobile = document.querySelector("#section3");
+mobile.addEventListener("click", lang);
+function lang(){
+    $(".publishing").addClass("on");
+    $(".design").addClass("on");
+}
 
 var offset;
 var sectionCounter=0;
