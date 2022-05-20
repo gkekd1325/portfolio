@@ -267,6 +267,9 @@ section:nth-child(3) img{width: 15%;  padding-right: 10px;}
     padding-right: 40px;
     text-align: left;
 }
+.notice.on{
+    transform:translateX(10%);
+}
 /* works */
 .works{
     flex-wrap: wrap;

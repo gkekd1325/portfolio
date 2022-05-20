@@ -39,23 +39,30 @@ function ent(){
         d.style.opacity="0";
     }
     if(scrollY>=1200){
-        publishing.style.transform="translateX(10%)";
-        design.style.transform="translateX(15%)";
-        notice.style.transform="translateX(10%)";
+        
+        $(".publishing").addClass("on");
+        $(".design").addClass("on");
+        $(".notice").addClass("on");
+       // publishing.style.transform="translateX(10%)";
+        // design.style.transform="translateX(15%)";
+        // notice.style.transform="translateX(10%)";
     }
     else{
-        publishing.style.transform="translateX(-150%)";
-        design.style.transform="translateX(-150%)"
-        notice.style.transform="translateX(100%)";
+        // publishing.style.transform="translateX(-150%)";
+        $(".publishing").removeClass("on");
+        // design.style.transform="translateX(-150%)"
+        $(".design").removeClass("on");
+        // notice.style.transform="translateX(100%)";
+        $(".notice").removeClass("on");
     }
 }
 /* 스크립트에 클래스를 추가(on이라는 클래스가 추가되었을떄 실행) 하고 스타일시트로 실행 어떻?*/
-// var mobile = document.querySelector("#section3");
-// mobile.addEventListener("click", lang);
-// function lang(){
-//     $(".publishing").addClass("on");
-//     $(".design").addClass("on");
-// }
+var mobile = document.querySelector("#section3");
+mobile.addEventListener("click", lang);
+function lang(){
+    $(".publishing").addClass("on");
+    $(".design").addClass("on");
+}
 
 var offset;
 var sectionCounter=0;
