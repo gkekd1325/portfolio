@@ -62,6 +62,7 @@ mobile.addEventListener("click", lang);
 function lang(){
     $(".publishing").addClass("on");
     $(".design").addClass("on");
+    $(".notice").addClass("on");
 }
 
 var offset;
